@@ -6,12 +6,15 @@ import (
 )
 
 func main(){
-	c := client_ws.RequestTemplate{Url: "https://jsonplaceholder.typicode.com/"}
-	c.AddHeader(client_ws.RequestHeader{Name: "user-id",Value:"123456"})
-	var response = Book{}
+	c := client_ws.RequestTemplate{Url: "https://enpopwf3y505.x.pipedream.net/", Body :Book{Id:434,Nome:"O diario de Any Frank"}}
+	var response = Resposta{}
+	c.Post().Body(&response)
+	fmt.Println("Resposta do serviço ",response.Success)
+}
 
-	 c.Get("todos/1").Body(response)
-	fmt.Println("Resposta do serviço ",response)
+
+type Resposta struct {
+	Success bool `json:"success"`
 }
 
 type Book struct {

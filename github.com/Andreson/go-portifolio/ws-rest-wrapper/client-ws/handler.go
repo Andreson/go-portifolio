@@ -1,8 +1,10 @@
 package client_ws
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"net/http"
 )
@@ -10,12 +12,24 @@ import (
 
 func unmarshalReponse(byteResponse []byte,respoModel interface{}) (error error){
 	if error := json.Unmarshal(byteResponse, &respoModel); error == nil {
+
 		return   nil
 	} else {
 		fmt.Println("Erro ao fazer Unmarshal: ",error)
 		return   error
 	}
 }
+
+
+func marshalRequest(requestData interface{}) (*bytes.Buffer, error) {
+	if marshal, error := json.Marshal(requestData); error == nil {
+		return  bytes.NewBuffer(marshal), nil
+	} else {
+		fmt.Println("Erro ao fazer Unmarshal: ",error)
+		return nil, error
+	}
+}
+
 
 func configHeaders(req *http.Request,auth RequestTemplate){
 	var isContentType bool = false
@@ -49,9 +63,9 @@ func call(req *http.Request) ([]byte, error,*http.Response) {
 	return body, nil,resp
 }
 
-func createRequest(url string) *http.Request {
+func createRequest(url string,httpMethod string,body io.Reader) *http.Request {
 
-	if req, err := http.NewRequest("GET", url, nil); err == nil {
+	if req, err := http.NewRequest(httpMethod, url, body); err == nil {
 		return req
 	} else {
 		fmt.Println("Erro ao criar Request ", err)
