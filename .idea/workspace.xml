@@ -7,10 +7,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1aGu413TeEvh8fO5Ar2wI0rVBlt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -19,16 +24,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/github.com/Andreson/go-portifolio" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586374088957">
+    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586634030510">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586374088957" />
+    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586634030510" />
+    <state x="1830" y="190" width="992" height="733" key="SettingsEditor" timestamp="1586633982756">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1830" y="190" width="992" height="733" key="SettingsEditor/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586633982756" />
   </component>
 </project>

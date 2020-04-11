@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/go-portifolio.iml" filepath="$PROJECT_DIR$/.idea/go-portifolio.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
->>>>>>> 7b70008dcfa8c0d9d93bbb7becda86e3a70042f3
     </modules>
   </component>
 </project>
