@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/vendas/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/vendas/service-vendas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/vendas/listagem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/vendas/vendas-templates.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler-produtos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/view/produto/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/vendas-template.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="go-portifolio" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +37,9 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1aGu413TeEvh8fO5Ar2wI0rVBlt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -69,6 +80,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1979" y="173" width="683" height="767" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586634152463" />
+    <state x="1989" y="261" key="search.everywhere.popup" timestamp="1586726116349">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="261" key="search.everywhere.popup/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586726116349" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

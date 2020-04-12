@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/Andreson/go-portifolio/vitrine-produtos/controller/produto"
+	"github.com/Andreson/go-portifolio/vitrine-produtos/controller/vendas"
 	"net/http"
 )
 
@@ -22,6 +23,8 @@ func main(){
 	http.HandleFunc("/detalhes", produto.Detail);
 
 	http.HandleFunc("/finalizarcompra", produto.FinalizarCompra)
+
+	http.HandleFunc("/vendas",vendas.GetAll)
 
 	fmt.Println("Servidor iniciado na porta :9099")
 	http.ListenAndServe(":9099",nil)
