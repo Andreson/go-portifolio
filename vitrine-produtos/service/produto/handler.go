@@ -34,7 +34,9 @@ func FindOne(sku int)ProdutoDTO {
 
 func FinishPurchase(sku int)ProdutoDTO{
 	  produto:=FindOne(sku)
-
-	dao.Save(produto.parseToEntity())
+	entity :=produto.parseToEntity()
+	fmt.Println("\n--------------------------entity", entity)
+	fmt.Println("--------------------------entity-------------------------------")
+	dao.Save(entity)
 	return produto
 }

@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/persistence/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/persistence/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/produtoModel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/detalhe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/style-products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence-wrapper/dao/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence-wrapper/dao/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence-wrapper/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence-wrapper/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence-wrapper/objectmetadata/getMetada.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence-wrapper/objectmetadata/getMetada.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-rest-wrapper/client-ws/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/ws-rest-wrapper/client-ws/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-rest-wrapper/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ws-rest-wrapper/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/service/produto/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/service/produto/produtoModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/produtoModel.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

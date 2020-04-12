@@ -38,7 +38,7 @@ func GetValues(q interface{}) (values string, prepareFields string) {
 			values = fmt.Sprintf("%s, %d", values, v.Field(i).Int())
 			prepareFields = fmt.Sprintf(" %s ", prepareFields, "?")
 		case reflect.Float64, reflect.Float32:
-			values = fmt.Sprintf("%s, %d", values, v.Field(i).Float())
+			values = fmt.Sprintf("%s, %f", values, v.Field(i).Float())
 			prepareFields = fmt.Sprintf(" %s ", prepareFields, "?")
 		case reflect.Bool:
 			values = fmt.Sprintf("%s, %t", values, v.Field(i).Bool())
@@ -47,7 +47,7 @@ func GetValues(q interface{}) (values string, prepareFields string) {
 			values = fmt.Sprintf("%s, '%s'", values, v.Field(i).String())
 			prepareFields = fmt.Sprintf(" %s ", prepareFields, "?")
 		default:
-			fmt.Println("Unsupported type")
+			fmt.Println("Unsupported type for field ",v.Field(i))
 			return
 		}
 	}
