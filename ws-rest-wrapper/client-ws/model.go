@@ -17,6 +17,8 @@ type RequestTemplate struct {
 	Auth RequestHeader
 	Headers []RequestHeader
 	Body interface{}
+	GetUrl func( ...string)
+
 }
 
 
@@ -32,9 +34,6 @@ type RequestHeader struct {
 	Value string
 }
 
-
-
-
 func (rt ResponseTemplate) Body( resp interface{}) ResponseTemplate{
 	unmarshalReponse(rt.BodyData, &resp)
 	return rt
@@ -43,3 +42,4 @@ func (rt ResponseTemplate) Body( resp interface{}) ResponseTemplate{
 func (rt RequestTemplate) AddHeader(rh RequestHeader){
 	rt.Headers =append(rt.Headers,rh)
 }
+

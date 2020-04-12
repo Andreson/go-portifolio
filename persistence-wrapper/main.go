@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	pw_dao "github.com/Andreson/go-portifolio/persistence-wrapper/dao"
-
+	pq_metadata "github.com/Andreson/go-portifolio/persistence-wrapper/objectmetadata"
 )
 
 func main() {
@@ -35,16 +35,16 @@ type Book struct {
 	Ok     bool
 }
 
-// func teste() {
-// 	query := pq_metadata.BuildSelectQuery(Pessoa{Name: "Thiago", Idade: 31, Endereco: "av piassnaguabá"})
+func teste() {
+	query := pq_metadata.BuildSelectQuery(Pessoa{Name: "Thiago", Idade: 31, Endereco: "av piassnaguabá"})
 
-// 	insert := pq_metadata.BuildInsertQuery(Pessoa{Name: "Thiago", Idade: 31, Endereco: "av piassnaguabá"})
+	insert := pq_metadata.BuildInsertQuery(Pessoa{Name: "Thiago", Idade: 31, Endereco: "av piassnaguabá"})
 
-// 	fmt.Printf("Insert query : %s \nSelect query: %s \n", query, insert)
-// }
+	fmt.Printf("Insert query : %s \nSelect query: %s \n", query, insert)
+}
 
-// type Pessoa struct {
-// 	Name     string
-// 	Idade    int
-// 	Endereco string
-// }
+type Pessoa struct {
+	Name     string
+	Idade    int
+	Endereco string
+}

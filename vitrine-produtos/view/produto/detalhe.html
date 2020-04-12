@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Finalizar compra </h2>
+    <div class="row">
+            <div class="col-sm-3">
+                <article class="col-item">
+                    <div class="photo">
+
+                        <a href="#"> <img width="200" height="200" src="{{.ImageUrl}}" class="img-responsive" alt="Product Image" /> </a>
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div class="price-details col-md-6">
+                                <p class="details">
+                                    {{.Description}}
+                                </p>
+                                <h1> {{.Name}}</h1>
+                                <span class="price-new">$ {{.Price}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <a href="finalizarcompra?sku={{.Sku}}" class="text-center">Comprar produto </a>
+            </div>
+
+
+        </div>
+
+
+</div>

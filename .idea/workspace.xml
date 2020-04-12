@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="" />
+    <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/persistence/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/persistence/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/produto/produtoModel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/detalhe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/style-products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence-wrapper/dao/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence-wrapper/dao/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence-wrapper/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/persistence-wrapper/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitrine-produtos/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-rest-wrapper/client-ws/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/ws-rest-wrapper/client-ws/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-rest-wrapper/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ws-rest-wrapper/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -22,6 +49,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -31,19 +60,39 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
     <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586634030510">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586634030510" />
-    <state x="1830" y="190" width="992" height="733" key="SettingsEditor" timestamp="1586633982756">
+    <state x="1830" y="190" width="992" height="733" key="SettingsEditor" timestamp="1586637257379">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1830" y="190" width="992" height="733" key="SettingsEditor/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586633982756" />
+    <state x="1830" y="190" width="992" height="733" key="SettingsEditor/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586637257379" />
+    <state x="1979" y="173" width="683" height="767" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586634152463">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1979" y="173" width="683" height="767" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586634152463" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/ws-rest-wrapper/client-ws/model.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

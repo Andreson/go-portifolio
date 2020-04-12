@@ -1,2 +1,6 @@
-github.com/Andreson/go-portifolio v0.0.0-20200408225822-ec9a9b72a9cf h1:QqK14BzAmf9HPm7VTTsyrfaOUSVY3uENY8QbEEpeKp0=
-github.com/Andreson/go-portifolio v0.0.1 h1:OHpRY8n64U/0OADYMcJzRxURR8KqKFEqh5DBX9m8E08=
+github.com/Andreson/go-portifolio/persistence-wrapper v0.0.0-20200411194100-6e703955dc81 h1:CwBGxTG5fdfMY8375sn2lpp9TWEkE4C/CQ9jDhkcYh0=
+github.com/Andreson/go-portifolio/persistence-wrapper v0.0.0-20200411194100-6e703955dc81/go.mod h1:/1XtNAzZILPnbT2zyyIq0fuAk76ae3uuK3QvKMTsg8o=
+github.com/Andreson/go-portifolio/ws-rest-wrapper v0.0.0-20200411194100-6e703955dc81 h1:haF+2cDymjblKfsZu/xmsunCyIvkeec/EWU94UrxBYA=
+github.com/Andreson/go-portifolio/ws-rest-wrapper v0.0.0-20200411194100-6e703955dc81/go.mod h1:nLmw29WlGZ7zOHFe0lpwbs7Ssf/CcEcCqIqbwc3x+0Y=
+github.com/go-sql-driver/mysql v1.5.0 h1:ozyZYNQW3x3HtqT1jira07DN2PArx2v7/mN66gGcHOs=
+github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=

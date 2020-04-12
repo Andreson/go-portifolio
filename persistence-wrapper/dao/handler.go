@@ -2,6 +2,7 @@ package pw_dao
 
 import (
 	"database/sql"
+	"fmt"
 	pw_mysql "github.com/Andreson/go-portifolio/persistence-wrapper/connection/mysql"
 	pq_metadata "github.com/Andreson/go-portifolio/persistence-wrapper/objectmetadata"
 )
@@ -11,7 +12,8 @@ import (
 func Save(dto interface{}){
 
 	insertSql := pq_metadata.BuildInsertQuery(dto)
-
+	fmt.Println("######################3 SQL insert\n#####################",insertSql)
+	fmt.Println("######################3 SQL insert\n ####################")
 	db :=pw_mysql.DbConn()
 	insertQuery, err := db.Query(insertSql)
 
