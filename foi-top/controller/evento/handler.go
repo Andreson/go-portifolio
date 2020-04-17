@@ -15,20 +15,16 @@ func Create(w  http.ResponseWriter, r *http.Request){
 	w.Header().Set("Content-Type", "application/json")
 	if erro==nil {
 		event_service.Cadastrar(dto)
+		w.Write(controller.GetSuccess())
 	 }else {
 	 	  w.WriteHeader(400)
-	 	 resp,err:=json.Marshal(controller.ReponseModel{StatusCode:400,Message:"Ocorreu um erro ao converter entidade," +erro.Error()})
-		if err==nil{
-			w.Write(resp)
-		}
-	 	w.Write([]byte("Erro nao esperado ao converter meg de erro "))
+	 	w.Write( controller.GetError(erro.Error()))
 	}
-
-
-
-
 }
 
+func FindById(w  http.ResponseWriter, r *http.Request) {
+
+}
 
 
 func  toDto(r *http.Request) (event_model.EventoDto,error) {

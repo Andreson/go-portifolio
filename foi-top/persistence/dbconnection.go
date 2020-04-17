@@ -19,7 +19,21 @@ func init() {
 	}
 }
 
-func GetConn() gorm.DB {
+func Execute( exec func(*gorm.DB) ) {
+			db:=GetConn();
+			exec(db)
+			defer  db.Close();
+}
+
+func GetConn() *gorm.DB {
+
+	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
+	db.Table("evento").CreateTable(&event_entity.EventoEntity{})
+	if err!=nil {
+		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
+		defer db.Close()
+	}
+
 	return db
 }
 
