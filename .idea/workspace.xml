@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/vendas/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/service/vendas/service-vendas.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/vendas/listagem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vitrine-produtos/view/vendas/vendas-templates.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/controller/handlerController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/controller/swagger/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/dao/evento/eventoDao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/service/evento/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/controller/produto/handler-produtos.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/finalizar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitrine-produtos/view/produto/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/vitrine-produtos/view/produto/vendas-template.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foi-top/persistence" />
+    </key>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
