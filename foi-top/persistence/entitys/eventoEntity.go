@@ -13,5 +13,5 @@ type  EventoEntity struct {
 }
 
 func (EventoEntity) TableName() string {
-	return "profiles"
+	return "evento"
 }

@@ -1,6 +1,7 @@
 package persistence
 
 import (
+	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
@@ -11,6 +12,7 @@ var db gorm.DB
 
 func init() {
 	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
+	db.Table("evento").CreateTable(&event_entity.EventoEntity{})
 	if err!=nil {
 		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
 		defer db.Close()
@@ -21,8 +23,8 @@ func GetConn() gorm.DB {
 	return db
 }
 
-func Save(entity interface{} ){
-
+func Save(entity event_entity.EventoEntity ){
+	db, _ := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
 	db.Create(&entity)
 	defer db.Close()
 }

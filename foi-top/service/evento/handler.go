@@ -4,6 +4,7 @@ import (
 	"errors"
 	event_model "github.com/Andreson/go-portifolio/foi-top/model/evento"
 	"github.com/Andreson/go-portifolio/foi-top/persistence"
+	"log"
 )
 
 func validarEvento(e event_model.EventoDto) error{
@@ -17,6 +18,8 @@ func validarEvento(e event_model.EventoDto) error{
 }
 
 func Cadastrar( dto event_model.EventoDto) {
+	e :=dto.ToEntity();
+	log.Println("Cadastrando evento ",e)
 
-	persistence.Save(dto.ToEntity())
+	persistence.Save(e)
 }
