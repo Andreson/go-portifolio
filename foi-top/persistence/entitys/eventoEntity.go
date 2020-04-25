@@ -10,6 +10,7 @@ type  EventoEntity struct {
 	Data time.Time
 	Status string
 	UserID int
+  	Despesas []ItemDespesaEventoEntity `gorm:"foreignkey:EventoRefer"`
 }
 
 func (EventoEntity) TableName() string {

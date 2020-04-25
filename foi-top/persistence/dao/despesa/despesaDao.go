@@ -1,24 +1,20 @@
-package evento_dao
+package despesa_dao
 
 import (
 	"github.com/Andreson/go-portifolio/foi-top/persistence"
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 	"github.com/jinzhu/gorm"
-	"log"
 )
 
-func Save(entity event_entity.EventoEntity ){
+func Save(entity event_entity.ItemDespesaEventoEntity ){
 	persistence.Execute(func(db *gorm.DB)error {
 		return db.Create(&entity).Error
 	})
 }
 
-func FindById(entity event_entity.EventoEntity )event_entity.EventoEntity{
-	var response event_entity.EventoEntity
+func ListByEvent(eventId int,response *[]event_entity.ItemDespesaEventoEntity){
 	persistence.Execute(func(db *gorm.DB)error {
-		return db.First(&response, entity.ID).Error
+		resp:=db.Where("evento_refer =?",eventId).Find(response)
+		return resp.Error
 	})
-
-	log.Println("Evento procurado ", response)
-	return response
 }

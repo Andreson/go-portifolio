@@ -12,23 +12,28 @@ var db gorm.DB
 
 func init() {
 	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
-	db.Table("evento").CreateTable(&event_entity.EventoEntity{})
+	db.AutoMigrate(&event_entity.EventoEntity{},&event_entity.ItemDespesaEventoEntity{})
+
 	if err!=nil {
 		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
 		defer db.Close()
 	}
 }
 
-func Execute( exec func(*gorm.DB) ) {
-			db:=GetConn();
-			exec(db)
-			defer  db.Close();
+func Execute( exec func(*gorm.DB) error )error {
+			db:=GetConn()
+			 if isError := exec(db); isError!=nil{
+			 	log.Println("Ocorreu um erro nao esperado ao executar  query: ",isError)
+			 	return isError
+			 }else {
+				log.Println("Objeto de erro retornado  ", isError)
+			}
+			defer  db.Close()
+			return nil
 }
 
 func GetConn() *gorm.DB {
-
 	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
-	db.Table("evento").CreateTable(&event_entity.EventoEntity{})
 	if err!=nil {
 		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
 		defer db.Close()

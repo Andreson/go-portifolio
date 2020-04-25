@@ -2,12 +2,13 @@ package event_service
 
 import (
 	"errors"
-	event_model "github.com/Andreson/go-portifolio/foi-top/model/evento"
+	"github.com/Andreson/go-portifolio/foi-top/domain"
 	evento_dao "github.com/Andreson/go-portifolio/foi-top/persistence/dao/evento"
+	"github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 	"log"
 )
 
-func validarEvento(e event_model.EventoDto) error{
+func validarEvento(e domain.EventoDto) error{
 	var validateErrors = make([]error, 5)
 
 	if e.Titulo=="" {
@@ -17,14 +18,14 @@ func validarEvento(e event_model.EventoDto) error{
 	return  nil
 }
 
-func Cadastrar( dto event_model.EventoDto) {
+func Cadastrar( dto domain.EventoDto) {
 	e :=dto.ToEntity()
 	log.Println("Cadastrando evento ",e)
 
 	evento_dao.Save(e)
 }
 
-func FindById( dto event_model.EventoDto) {
+func FindById(dto domain.EventoDto) event_entity.EventoEntity {
 
-	evento_dao.FindById(dto.ToEntity())
+	return evento_dao.FindById(dto.ToEntity())
 }
