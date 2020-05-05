@@ -13,6 +13,10 @@ func  Init(){
 	http.HandleFunc("/error",UnauthorizedAutentication)
 }
 
+func Login(login domain.Login) {
+	
+}
+
 func UnauthorizedAutentication(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusUnauthorized)
 }

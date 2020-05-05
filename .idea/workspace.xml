@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foi-top/controller/autentication/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/controller/custos/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/domain/despesaEvento.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/domain/login.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesaDao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEvento.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/service/autentication/handle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/service/itemEvento/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/controller/handlerController.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/handlerController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/autentication/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/autentication/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/model/evento/evento.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/evento.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/model/usuario/usuario.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/usuario.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/evento/eventoDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/evento/eventoDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/evento/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/evento/handler.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +52,12 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">

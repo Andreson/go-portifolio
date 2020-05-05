@@ -9,9 +9,17 @@ import (
 	"os"
 )
 
+/**
+Projeto para fim de aprendizado da linguagem golang
+Libs utilizadas
+  - jwt-go  - Geraçao de token jwt
+  - gorm    - Framework de persistencia SQL ORM
+API rest com a finalidade de persistir registros no banco de dados myql
+Foram implementados recurso jwt-go de  geraçao de token JWT
+e Http Filter handle com recursos nativos da linguagem
+ */
+
 func  main()  {
-
-
 
 	event_controller.Init()
 	coast_controller.Init()
