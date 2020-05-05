@@ -12,7 +12,7 @@ type EventoDto struct {
 	Bairro   string
 	Data     string
 	Status   EventoStatus
-	Usuario  Usuario
+	Usuario  UsuarioDTO
 }
 type EventoStatus int
 const (

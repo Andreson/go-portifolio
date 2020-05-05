@@ -42,11 +42,7 @@ func GetConn() *gorm.DB {
 	return db
 }
 
-func Save(entity event_entity.EventoEntity ){
-	db, _ := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
-	db.Create(&entity)
-	defer db.Close()
-}
+
 
 func FindAll(entity interface{}) *gorm.DB {
  return  db.Find(&entity)

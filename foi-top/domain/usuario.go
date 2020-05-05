@@ -2,7 +2,10 @@ package domain
 
 
 
-type Usuario struct {
+type UsuarioDTO struct {
 	Nome string
+	Email string
+	Fone string
+	Endereco string
 	Id int
 }
