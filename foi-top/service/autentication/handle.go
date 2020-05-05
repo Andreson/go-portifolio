@@ -13,7 +13,7 @@ type Claims struct {
 	jwt.StandardClaims
 }
 
-func GenerateToken(login domain.Login) (string, error){
+func GenerateToken(login domain.LoginDto) (string, error){
 
 	claims := &Claims{
 		Username: login.Username,
@@ -27,7 +27,7 @@ func GenerateToken(login domain.Login) (string, error){
 	} else {return "", err}
 }
 
-func ValidatedToken(login domain.Login) (bool, error){
+func ValidatedToken(login domain.LoginDto) (bool, error){
 
 	claims := &Claims{}
 	token, err := jwt.ParseWithClaims(login.TokenJWT, claims, func(token *jwt.Token) (interface{}, error) {
@@ -39,7 +39,7 @@ func ValidatedToken(login domain.Login) (bool, error){
 	} else {return token.Valid, nil}
 }
 
- func RewToken(login domain.Login)(string, error){
+ func RewToken(login domain.LoginDto)(string, error){
 
 	 claims := &Claims{}
 	 _, err := jwt.ParseWithClaims(login.TokenJWT, claims, func(token *jwt.Token) (interface{}, error) {
