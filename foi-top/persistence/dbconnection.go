@@ -5,19 +5,17 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
+	"os"
 )
 
 
-var db gorm.DB
+var db *gorm.DB
 
 func init() {
-	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
+	GetConn()
 	db.AutoMigrate(&event_entity.EventoEntity{},&event_entity.ItemDespesaEventoEntity{})
 
-	if err!=nil {
-		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
-		defer db.Close()
-	}
+
 }
 
 func Execute( exec func(*gorm.DB) error )error {
@@ -33,9 +31,19 @@ func Execute( exec func(*gorm.DB) error )error {
 }
 
 func GetConn() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
+	var  profile  string
+	var err error
+	 if profile =os.Getenv("PROFILE"); profile=="" {
+	 	profile="dev"
+	 }
+	 if profile=="dev" {
+		 db, err = gorm.Open("mysql", "root:123@/eventos?charset=utf8&parseTime=True&loc=Local")
+	 } else {
+		 db, err = gorm.Open("mysql", "root:123123@(104.198.32.149)/eventos?charset=utf8&parseTime=True&loc=Local")
+	 }
 	if err!=nil {
-		log.Panic("Erro ao inicializar conexao com banco  de dados ",err)
+		log.Printf("\nPROFILE %s",os.Getenv("PROFILE"))
+		log.Panic("Erro ao inicializar conexao com banco  de dados , profile  ",err,profile)
 		defer db.Close()
 	}
 
