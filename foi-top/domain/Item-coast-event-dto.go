@@ -1,6 +1,6 @@
 package domain
 
-type ItemDespesaEventoDTO struct {
+type ItemCoastEventDTO struct {
 
 	Nome string
 	Descricao string

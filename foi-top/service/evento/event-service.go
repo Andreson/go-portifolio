@@ -8,7 +8,7 @@ import (
 	"log"
 )
 
-func validatedEvent(e domain.EventoDto) error{
+func validatedEvent(e domain.EventDto) error{
 	var validateErrors = make([]error, 5)
 
 	if e.Titulo=="" {
@@ -18,14 +18,14 @@ func validatedEvent(e domain.EventoDto) error{
 	return  nil
 }
 
-func Save( dto domain.EventoDto) {
+func Save( dto domain.EventDto) {
 	e :=dto.ToEntity()
 	log.Println("Cadastrando evento ",e)
 
 	evento_dao.Save(e)
 }
 
-func FindById(dto domain.EventoDto) event_entity.EventoEntity {
+func FindById(dto domain.EventDto) event_entity.EventoEntity {
 
 	return evento_dao.FindById(dto.ToEntity())
 }

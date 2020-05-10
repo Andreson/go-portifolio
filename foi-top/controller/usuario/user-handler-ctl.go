@@ -17,9 +17,9 @@ func Save(w  http.ResponseWriter, r *http.Request){
 	} ,w,err)
 }
 
-func  toDto(r *http.Request) (domain.ItemDespesaEventoDTO,error) {
+func  toDto(r *http.Request) (domain.ItemCoastEventDTO,error) {
 	decoder := json.NewDecoder(r.Body)
-	var data domain.ItemDespesaEventoDTO
+	var data domain.ItemCoastEventDTO
 	err := decoder.Decode(&data)
 	if err != nil {
 		panic(err)

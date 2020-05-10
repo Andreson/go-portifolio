@@ -30,14 +30,14 @@ func FindById(w  http.ResponseWriter, r *http.Request) {
 	id, err :=strconv.Atoi(tempIdParam)
 
 	controller.DefaultCallBody( func()interface{}{
-		return event_service.FindById(domain.EventoDto{Id: id})
+		return event_service.FindById(domain.EventDto{Id: id})
 	} ,w,err)
 
 }
 
-func  toDto(r *http.Request) (domain.EventoDto,error) {
+func  toDto(r *http.Request) (domain.EventDto,error) {
 	decoder := json.NewDecoder(r.Body)
-	var data domain.EventoDto
+	var data domain.EventDto
 	err := decoder.Decode(&data)
 	if err != nil {
 		panic(err)

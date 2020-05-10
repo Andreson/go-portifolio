@@ -5,14 +5,14 @@ import (
 	"time"
 )
 
-type EventoDto struct {
+type EventDto struct {
 	Id       int
 	Titulo   string
 	Endereco string
 	Bairro   string
 	Data     string
 	Status   EventoStatus
-	Usuario  UsuarioDTO
+	Usuario  UserDTO
 }
 type EventoStatus int
 const (
@@ -23,7 +23,7 @@ const (
 func (d EventoStatus) String() string {
 	return [3]string{"Confirmado", "Criado", "Cancelado"}[d]
 }
-func (e EventoDto) ToEntity() (event_entity.EventoEntity) {
+func (e EventDto) ToEntity() (event_entity.EventoEntity) {
 	return event_entity.EventoEntity{
 		BaseModel:event_entity.BaseModel{ID:e.Id} ,
 		Titulo: e.Titulo,

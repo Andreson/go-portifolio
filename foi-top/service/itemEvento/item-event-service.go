@@ -6,16 +6,16 @@ import (
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 )
 
-func Save( dto domain.ItemDespesaEventoDTO) {
+func Save( dto domain.ItemCoastEventDTO) {
 	e :=ToEntity(dto)
 
 	despesa_dao.Save(e)
 }
 
-func ListByEvent(eventId int )[]domain.ItemDespesaEventoDTO{
+func ListByEvent(eventId int )[]domain.ItemCoastEventDTO {
 	var entityQuery []event_entity.ItemDespesaEventoEntity
 	despesa_dao.ListByEvent(eventId, &entityQuery)
-	response := make( []domain.ItemDespesaEventoDTO, len(entityQuery))
+	response := make( []domain.ItemCoastEventDTO, len(entityQuery))
 
 	for i, v :=  range entityQuery {
 		response[i]= ToDto(v)
@@ -24,8 +24,8 @@ func ListByEvent(eventId int )[]domain.ItemDespesaEventoDTO{
 	return response
 }
 
-func ToDto(item event_entity.ItemDespesaEventoEntity ) domain.ItemDespesaEventoDTO {
-	return domain.ItemDespesaEventoDTO{
+func ToDto(item event_entity.ItemDespesaEventoEntity ) domain.ItemCoastEventDTO {
+	return domain.ItemCoastEventDTO{
 		EventoId:item.ID,
 		Valor:item.Valor,
 		Unidade:item.Unidade,
@@ -35,7 +35,7 @@ func ToDto(item event_entity.ItemDespesaEventoEntity ) domain.ItemDespesaEventoD
 }
 
 
-func ToEntity(item domain.ItemDespesaEventoDTO) event_entity.ItemDespesaEventoEntity {
+func ToEntity(item domain.ItemCoastEventDTO) event_entity.ItemDespesaEventoEntity {
 
 	return  event_entity.ItemDespesaEventoEntity {
 		Nome:item.Nome,

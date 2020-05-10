@@ -9,5 +9,5 @@ type LoginDto struct {
 	Enable         bool
 	TokenJWT       string
 	StandardClaims jwt.StandardClaims
-	User           UsuarioDTO
+	User           UserDTO
 }

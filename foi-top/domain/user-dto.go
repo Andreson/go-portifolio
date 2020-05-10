@@ -2,7 +2,7 @@ package domain
 
 
 
-type UsuarioDTO struct {
+type UserDTO struct {
 	Nome string
 	Email string
 	Fone string

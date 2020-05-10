@@ -6,7 +6,7 @@ import (
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 )
 
-func Save(user domain.UsuarioDTO) {
+func Save(user domain.UserDTO) {
   user_dao.Salvar(ToEntity(user))
 }
 
@@ -19,7 +19,7 @@ func ListByEvent(eventoId int64) {
 
 }
 
-func ToEntity(user domain.UsuarioDTO) event_entity.UsuarioEntity {
+func ToEntity(user domain.UserDTO) event_entity.UsuarioEntity {
 	return event_entity.UsuarioEntity {
 		Nome:user.Nome,
 		Endereco:user.Endereco,
