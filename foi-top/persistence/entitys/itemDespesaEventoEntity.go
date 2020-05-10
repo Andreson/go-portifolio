@@ -8,7 +8,7 @@ type ItemDespesaEventoEntity struct {
 	Descricao string
 	Valor float32
 	Unidade int
-	EventoRefer int
+	EventoRefer int64
 
 }
 

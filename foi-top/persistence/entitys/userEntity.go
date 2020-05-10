@@ -1,6 +1,5 @@
 package event_entity
 
-
 type UsuarioEntity struct {
 	BaseModel
 	Nome string

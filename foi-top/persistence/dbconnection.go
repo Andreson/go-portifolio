@@ -16,16 +16,17 @@ func init() {
 	db.AutoMigrate(&event_entity.EventoEntity{},
 				   &event_entity.ItemDespesaEventoEntity{},
 				   &event_entity.UsuarioEntity{},
-				   &event_entity.UserByEventEntity{} )
+				   &event_entity.UserByEventEntity{},
+				   &event_entity.LoginEntity{})
 }
 
-func Execute( exec func(*gorm.DB) error )error {
+func Execute( exec func(*gorm.DB) *gorm.DB )*gorm.DB {
 			db:=GetConn()
-			 if isError := exec(db); isError!=nil{
-			 	log.Println("Ocorreu um erro nao esperado ao executar  query: ",isError)
-			 	return isError
+			 if dbHandler := exec(db); dbHandler.Error!=nil{
+			 	log.Println("Ocorreu um erro nao esperado ao executar  query: ", dbHandler)
+			 	return dbHandler
 			 }else {
-				log.Println("Objeto de erro retornado  ", isError)
+				log.Println("Objeto  persistido:  ", dbHandler.Value)
 			}
 			defer  db.Close()
 			return nil

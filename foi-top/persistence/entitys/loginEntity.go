@@ -8,7 +8,8 @@ type LoginEntity struct {
 	Enable         bool
 	TokenJWT       string
 	StandardClaims jwt.StandardClaims
-	User  UsuarioEntity
+	User  UsuarioEntity `gorm:"foreignkey:UserID"`
+	UserID int64
 }
 
 

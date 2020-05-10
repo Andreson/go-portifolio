@@ -8,15 +8,15 @@ import (
 )
 
 func Save(entity event_entity.EventoEntity ){
-	persistence.Execute(func(db *gorm.DB)error {
-		return db.Create(&entity).Error
+	persistence.Execute(func(db *gorm.DB)*gorm.DB  {
+		return db.Create(&entity)
 	})
 }
 
 func FindById(entity event_entity.EventoEntity )event_entity.EventoEntity{
 	var response event_entity.EventoEntity
-	persistence.Execute(func(db *gorm.DB)error {
-		return db.First(&response, entity.ID).Error
+	persistence.Execute(func(db *gorm.DB)*gorm.DB  {
+		return db.First(&response, entity.ID)
 	})
 
 	log.Println("Evento procurado ", response)

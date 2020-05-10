@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/service/login/login-service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/controller/custos/coast-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/coast/coast-handler-ctl.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/autentication/auth-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/autentication/auth-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/coast/coast-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/coast/coast-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/event/event-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/event/event-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/Item-coast-event-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/Item-coast-event-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/event-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/event-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/login-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/login-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/user-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/user-dto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/evento/event-service.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/itemEvento/item-event-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/itemEvent/item-event-service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/usuario/user-service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesaDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/evento/eventoDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuarioDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEventoEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEventoEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/userEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/userEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/user/user-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/user/user-service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +102,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1830" y="190" width="992" height="733" key="SettingsEditor/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586637257379" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589074376171">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589074376171" />
     <state x="1466" y="130" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587405750673">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -95,10 +114,14 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1979" y="173" width="683" height="767" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1587401175941" />
-    <state x="1989" y="261" key="search.everywhere.popup" timestamp="1586726116349">
+    <state x="2018" y="175" width="615" height="759" key="find.popup" timestamp="1589074380989">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="261" key="search.everywhere.popup/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586726116349" />
+    <state x="2018" y="175" width="615" height="759" key="find.popup/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589074380989" />
+    <state x="1989" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1589074362409">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="261" width="672" height="678" key="search.everywhere.popup/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589074362409" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

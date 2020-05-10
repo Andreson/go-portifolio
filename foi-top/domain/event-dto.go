@@ -6,7 +6,7 @@ import (
 )
 
 type EventDto struct {
-	Id       int
+	Id       int64
 	Titulo   string
 	Endereco string
 	Bairro   string

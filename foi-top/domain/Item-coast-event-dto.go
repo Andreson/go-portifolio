@@ -6,7 +6,7 @@ type ItemCoastEventDTO struct {
 	Descricao string
 	Valor float32
 	Unidade int
-	EventoId  int
+	EventoId  int64
 
 }
 

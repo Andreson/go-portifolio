@@ -8,11 +8,12 @@ import (
 
 func Save(user domain.UserDTO) {
   user_dao.Salvar(ToEntity(user))
+
 }
 
 
-func FindBById(){
-
+func FindById(user domain.UserDTO){
+	user_dao.FindById(user.Id)
 }
 
 func ListByEvent(eventoId int64) {
@@ -25,5 +26,6 @@ func ToEntity(user domain.UserDTO) event_entity.UsuarioEntity {
 		Endereco:user.Endereco,
 		Email:user.Email,
 		Fone:user.Fone,
+
 	}
 }

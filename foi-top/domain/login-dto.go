@@ -3,11 +3,12 @@ package domain
 
 import 	"github.com/dgrijalva/jwt-go"
 
-type LoginDto struct {
+type LoginDTO struct {
 	Username       string
 	Password       string
 	Enable         bool
 	TokenJWT       string
 	StandardClaims jwt.StandardClaims
-	User           UserDTO
+	UserId int64
+
 }

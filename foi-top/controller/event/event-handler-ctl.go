@@ -14,8 +14,15 @@ import (
 
 
 func Init(){
-	initializeFuncHandler()
+	createEvent := http.HandlerFunc(Create)
+	http.Handle("/event",aut_controller.FilterHandler(createEvent))
+
+	findById:= http.HandlerFunc(FindById)
+	http.Handle("/event/",aut_controller.FilterHandler(findById))
+
 }
+
+
 
 func Create(w  http.ResponseWriter, r *http.Request){
 	dto, err :=toDto(r)
@@ -30,7 +37,7 @@ func FindById(w  http.ResponseWriter, r *http.Request) {
 	id, err :=strconv.Atoi(tempIdParam)
 
 	controller.DefaultCallBody( func()interface{}{
-		return event_service.FindById(domain.EventDto{Id: id})
+		return event_service.FindById(domain.EventDto{Id: int64(id)})
 	} ,w,err)
 
 }
@@ -44,15 +51,6 @@ func  toDto(r *http.Request) (domain.EventDto,error) {
 	}
 	 log.Print("Request ",data)
 	   return data, nil
-}
-
-func initializeFuncHandler(){
-	createEvent := http.HandlerFunc(Create)
-	http.Handle("/event",aut_controller.FilterHandler(createEvent))
-
-	findById:= http.HandlerFunc(FindById)
-	http.Handle("/event/",aut_controller.FilterHandler(findById))
-
 }
 
 

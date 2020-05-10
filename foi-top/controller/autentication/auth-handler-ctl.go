@@ -47,7 +47,7 @@ func FilterHandler(h http.Handler) http.Handler {
 		//	http.Redirect(w, r, "/error", http.StatusUnauthorized)
 			return
 		}
-		 isValid, err :=aut_service.ValidatedToken(domain.LoginDto{TokenJWT: jwtToken})
+		 isValid, err :=aut_service.ValidatedToken(domain.LoginDTO{TokenJWT: jwtToken})
 
 		 if err!=nil {
 			 log.Println("token nao informado : ",err)
@@ -72,9 +72,9 @@ func FilterHandler(h http.Handler) http.Handler {
 }
 
 
-func  toDto(r *http.Request) (domain.LoginDto,error) {
+func  toDto(r *http.Request) (domain.LoginDTO,error) {
 	decoder := json.NewDecoder(r.Body)
-	var data domain.LoginDto
+	var data domain.LoginDTO
 	err := decoder.Decode(&data)
 	if err != nil {
 		panic(err)

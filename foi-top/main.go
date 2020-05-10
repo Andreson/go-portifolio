@@ -4,6 +4,7 @@ import (
 	aut_controller "github.com/Andreson/go-portifolio/foi-top/controller/autentication"
 	coast_controller "github.com/Andreson/go-portifolio/foi-top/controller/coast"
 	event_controller "github.com/Andreson/go-portifolio/foi-top/controller/event"
+	user_controller "github.com/Andreson/go-portifolio/foi-top/controller/usuario"
 	"log"
 	"net/http"
 	"os"
@@ -24,7 +25,7 @@ func  main()  {
 	event_controller.Init()
 	coast_controller.Init()
 	aut_controller.Init()
-
+	user_controller.Init()
 
 	var port=""
 	if port =os.Getenv("HOST_PORT");port=="" {

@@ -9,7 +9,7 @@ type  EventoEntity struct {
 	Bairro string
 	Data time.Time
 	Status string
-	UserID int
+	UserID int64
   	Despesas []ItemDespesaEventoEntity `gorm:"foreignkey:EventoRefer"`
 }
 

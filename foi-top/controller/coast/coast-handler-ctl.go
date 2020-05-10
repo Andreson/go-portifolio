@@ -14,10 +14,12 @@ import (
 
 
 func Init(){
+	addCoast := http.HandlerFunc(AddCoast)
+	http.Handle("/event/coast",aut_controller.FilterHandler(addCoast))
 
-	initializeFuncHandler()
+	listCoastByEvent := http.HandlerFunc(ListCoastByEvent)
+	http.HandleFunc("/event/coast/", listCoastByEvent)
 }
-
 func AddCoast(w http.ResponseWriter, r *http.Request) {
 	data,err :=toDto(r)
 	DefaultCall( func(){
@@ -46,11 +48,3 @@ func  toDto(r *http.Request) (domain.ItemCoastEventDTO,error) {
 }
 
 
-func initializeFuncHandler() {
-
-	addCoast := http.HandlerFunc(AddCoast)
-	http.Handle("/event/coast",aut_controller.FilterHandler(addCoast))
-
-	listCoastByEvent := http.HandlerFunc(ListCoastByEvent)
-	http.HandleFunc("/event/coast/", listCoastByEvent)
-}
