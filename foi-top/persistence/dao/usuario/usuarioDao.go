@@ -11,3 +11,8 @@ func Salvar(user event_entity.UsuarioEntity) {
 		return	db.Save(user).Error
 	})
 }
+
+
+func ListarUsuarioPorEvento(idEvento int64) {
+
+}

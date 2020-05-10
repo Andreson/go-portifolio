@@ -10,7 +10,6 @@ type UsuarioEntity struct {
 }
 
 
-
 func (UsuarioEntity) TableName()string {
 	return "usuario"
 }

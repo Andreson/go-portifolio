@@ -6,7 +6,7 @@ import (
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 )
 
-func Cadastrar( dto domain.ItemDespesaEventoDTO) {
+func Save( dto domain.ItemDespesaEventoDTO) {
 	e :=ToEntity(dto)
 
 	despesa_dao.Save(e)

@@ -6,10 +6,18 @@ import (
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 )
 
-func Cadastrar(user domain.UsuarioDTO) {
+func Save(user domain.UsuarioDTO) {
   user_dao.Salvar(ToEntity(user))
 }
 
+
+func FindBById(){
+
+}
+
+func ListByEvent(eventoId int64) {
+
+}
 
 func ToEntity(user domain.UsuarioDTO) event_entity.UsuarioEntity {
 	return event_entity.UsuarioEntity {

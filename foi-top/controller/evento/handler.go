@@ -20,7 +20,7 @@ func Init(){
 func Create(w  http.ResponseWriter, r *http.Request){
 	dto, err :=toDto(r)
 	controller.DefaultCall( func(){
-		event_service.Cadastrar(dto)
+		event_service.Save(dto)
 	} ,w,err)
 }
 

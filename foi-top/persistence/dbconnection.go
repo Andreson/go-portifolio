@@ -13,9 +13,10 @@ var db *gorm.DB
 
 func init() {
 	GetConn()
-	db.AutoMigrate(&event_entity.EventoEntity{},&event_entity.ItemDespesaEventoEntity{})
-
-
+	db.AutoMigrate(&event_entity.EventoEntity{},
+				   &event_entity.ItemDespesaEventoEntity{},
+				   &event_entity.UsuarioEntity{},
+				   &event_entity.UserByEventEntity{} )
 }
 
 func Execute( exec func(*gorm.DB) error )error {

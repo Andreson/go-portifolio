@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/userEventEntity.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/evento/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/usuario/handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/usuario/handle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/despesaEvento.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/despesaEventoDTO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/evento.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/eventoDTO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/loginDTO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/usuario.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/domain/usuarioDTO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuarioDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuarioDao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEvento.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEventoEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/userEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/userEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/evento/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/evento/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/itemEvento/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/itemEvento/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/usuario/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/usuario/handler.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
