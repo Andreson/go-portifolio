@@ -2,8 +2,8 @@ package main
 
 import (
 	aut_controller "github.com/Andreson/go-portifolio/foi-top/controller/autentication"
-	coast_controller "github.com/Andreson/go-portifolio/foi-top/controller/custos"
-	event_controller "github.com/Andreson/go-portifolio/foi-top/controller/evento"
+	coast_controller "github.com/Andreson/go-portifolio/foi-top/controller/coast"
+	event_controller "github.com/Andreson/go-portifolio/foi-top/controller/event"
 	"log"
 	"net/http"
 	"os"

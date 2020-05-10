@@ -5,7 +5,7 @@ import (
 	. "github.com/Andreson/go-portifolio/foi-top/controller"
 	aut_controller "github.com/Andreson/go-portifolio/foi-top/controller/autentication"
 	"github.com/Andreson/go-portifolio/foi-top/domain"
-	itemevento_service "github.com/Andreson/go-portifolio/foi-top/service/itemEvento"
+	itemevento_service "github.com/Andreson/go-portifolio/foi-top/service/itemEvent"
 	"log"
 	"net/http"
 	"strconv"
@@ -21,7 +21,7 @@ func Init(){
 func AddCoast(w http.ResponseWriter, r *http.Request) {
 	data,err :=toDto(r)
 	DefaultCall( func(){
-		itemevento_service.Cadastrar(data)
+		itemevento_service.Save(data)
 	} ,w,err)
 }
 
