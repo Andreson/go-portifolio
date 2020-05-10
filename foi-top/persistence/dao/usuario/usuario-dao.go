@@ -13,9 +13,12 @@ func Salvar(user event_entity.UsuarioEntity)event_entity.UsuarioEntity {
   return user
 }
 
-
-func FindById(userId int64){
-
+func FindById(userId int64)event_entity.UsuarioEntity{
+	var user event_entity.UsuarioEntity
+	persistence.Execute(func(db *gorm.DB) *gorm.DB {
+		return db.First(&user,userId)
+	})
+	return user
 }
 
 func ListarUsuarioPorEvento(idEvento int64) {

@@ -18,6 +18,13 @@ Libs utilizadas
 API rest com a finalidade de persistir registros no banco de dados myql
 Foram implementados recurso jwt-go de  geraçao de token JWT
 e Http Filter handle com recursos nativos da linguagem
+
+  #Env PARAM
+   - HOST_PORT
+   - PROFILE - UTILIZADO PARA DEFINIR SE A CONEXAO DO BANCO DE DADOS
+SER LOCAL OU REMOTA
+       - dev : conexao local
+       - others: conexao remota
  */
 
 func  main()  {

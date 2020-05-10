@@ -8,21 +8,24 @@ import (
 	user_service "github.com/Andreson/go-portifolio/foi-top/service/user"
 	"log"
 	"net/http"
+	"strconv"
+	"strings"
 )
 
 
 func Init(){
-
 	http.HandleFunc("/user",Save)
 	findUserh :=http.HandlerFunc(FindById)
-	http.Handle("user/",aut_controller.FilterHandler(findUserh))
+	http.Handle("/user/",aut_controller.FilterHandler(findUserh))
 }
 
 
 func FindById(w  http.ResponseWriter, r *http.Request) {
-	dto, err :=toDto(r)
-	controller.DefaultCall( func(){
-		user_service.FindById(dto)
+
+	tempIdParam := strings.TrimPrefix(r.URL.Path, "/user/")
+	id, err :=strconv.Atoi(tempIdParam)
+	controller.DefaultCallBody( func()interface{}{
+		return user_service.FindById(domain.UserDTO{Id:int64(  id )})
 	} ,w,err)
 }
 
