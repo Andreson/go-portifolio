@@ -1,9 +1,8 @@
 package notific_service
 
 import (
-	"bytes"
 	"cloud.google.com/go/pubsub"
-	"encoding/gob"
+	"encoding/json"
 	"github.com/Andreson/go-portifolio/foi-top/config"
 	"log"
 )
@@ -23,12 +22,10 @@ func SendMesage(topicName string, content interface{} ) error {
 }
 
 func castContentMensage(key interface{}) ([]byte) {
-	var buf bytes.Buffer
-	enc := gob.NewEncoder(&buf)
-	err := enc.Encode(key)
-	if err != nil {
-		log.Fatal("Erro ao conventer conteudo da msg ",err)
+	msg, error :=json.Marshal(key)
+	if error != nil {
+		log.Fatal("Erro ao conventer conteudo da msg ",error)
 		return nil
 	}
-	return buf.Bytes()
+	return msg
 }

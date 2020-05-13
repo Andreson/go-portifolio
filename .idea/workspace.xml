@@ -2,24 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foi-top/config/pubsub-config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/domain/invite-dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/resources/gcp-key.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foi-top/service/pubsub/notification-service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top-notify/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top-notify/service/notify-service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/config/dbconnection-config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/login/login-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/login/login-service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foi-top/service/user/user-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/user/user-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/config/dbconnection-config.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/config/dbconnection-config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/config/pubsub-config.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/config/pubsub-config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/autentication/auth-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/autentication/auth-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/coast/coast-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/coast/coast-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/event/event-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/event/event-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/handlerController.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/handlerController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/swagger/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/swagger/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/controller/usuario/user-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/Item-coast-event-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/domain/Item-coast-event-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/event-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/domain/event-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/invite-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/domain/invite-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/login-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/domain/login-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/domain/user-dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/domain/user-dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/foi-top" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/foi-top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/foitop" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/foitop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/dao/despesa/despesa-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/dao/evento/evento-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/dao/login/login-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/dao/usuario/usuario-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/baseModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/baseModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/eventoEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/eventoEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/itemDespesaEventoEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/itemDespesaEventoEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/loginEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/userEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/userEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/userEventEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/persistence/entitys/userEventEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/resources/gcp-key.json" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/resources/gcp-key.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/autentication/auto-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/event/event-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/event/event-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/itemEvent/item-event-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/itemEvent/item-event-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/login/login-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/login/login-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/pubsub/pubusb-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/pubsub/pubusb-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/user/user-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top-api/service/user/user-service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +87,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/foi-top/config" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,13 +154,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/foi-top/main.go</url>
+          <url>file://$PROJECT_DIR$/foi-top-api/main.go</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/foi-top/service/pubsub/notification-service.go</url>
-          <line>10</line>
+          <url>file://$PROJECT_DIR$/foi-top-api/service/pubsub/pubusb-service.go</url>
+          <line>9</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
