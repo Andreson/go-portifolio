@@ -1,13 +1,13 @@
 package user_dao
 
 import (
-	"github.com/Andreson/go-portifolio/foi-top/persistence"
+	"github.com/Andreson/go-portifolio/foi-top/config"
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 	"github.com/jinzhu/gorm"
 )
 
 func Salvar(user event_entity.UsuarioEntity)event_entity.UsuarioEntity {
- persistence.Execute(func(db *gorm.DB) *gorm.DB {
+ config.ExecuteQuery(func(db *gorm.DB) *gorm.DB {
 		return db.Save(&user)
 	})
   return user
@@ -15,7 +15,7 @@ func Salvar(user event_entity.UsuarioEntity)event_entity.UsuarioEntity {
 
 func FindById(userId int64)event_entity.UsuarioEntity{
 	var user event_entity.UsuarioEntity
-	persistence.Execute(func(db *gorm.DB) *gorm.DB {
+	config.ExecuteQuery(func(db *gorm.DB) *gorm.DB {
 		return db.First(&user,userId)
 	})
 	return user

@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e76e809-83fb-4f28-b57f-0c8ba3a302fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foi-top/config/pubsub-config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/domain/invite-dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/resources/gcp-key.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foi-top/service/pubsub/notification-service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/controller/usuario/user-handler-ctl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/despesa/despesa-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/evento/evento-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/login/login-dao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/dao/usuario/usuario-dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/dbconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/config/dbconnection-config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/persistence/entitys/loginEntity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/autentication/auto-service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foi-top/service/login/login-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/login/login-service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foi-top/service/user/user-service.go" beforeDir="false" afterPath="$PROJECT_DIR$/foi-top/service/user/user-service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +65,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/foi-top/config" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -64,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foi-top/config" />
       <recent name="$PROJECT_DIR$/foi-top/domain/" />
       <recent name="$PROJECT_DIR$/foi-top/persistence" />
     </key>
@@ -76,10 +90,14 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586634030510">
+    <state x="2068" y="360" width="506" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589328362470">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1586634030510" />
+    <state x="2068" y="360" width="506" height="392" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589328362470" />
+    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl" timestamp="1589325965515">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2109" y="298" width="424" height="487" key="FileChooserDialogImpl/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589325965515" />
     <state x="1830" y="190" width="992" height="733" key="SettingsEditor" timestamp="1586637257379">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -88,10 +106,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589074376171" />
-    <state x="1466" y="130" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587405750673">
+    <state x="1466" y="130" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589407923846">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1466" y="130" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1587405750673" />
+    <state x="1466" y="130" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1366.0.1920.1080/0.30.1366.738@1366.0.1920.1080" timestamp="1589407923846" />
     <state x="1979" y="173" width="683" height="767" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589142886235">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -117,6 +135,11 @@
           <url>file://$PROJECT_DIR$/foi-top/main.go</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/foi-top/service/pubsub/notification-service.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

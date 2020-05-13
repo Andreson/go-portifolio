@@ -55,6 +55,6 @@ func ValidatedToken(login domain.LoginDTO) (bool, error){
  }
 
  func expirationDateToken()int64 {
-	return time.Now().Add(5 * time.Minute).Unix()
+	return time.Now().Add(50000 * time.Minute).Unix()
 
  }

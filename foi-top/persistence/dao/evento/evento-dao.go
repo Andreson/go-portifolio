@@ -1,21 +1,21 @@
 package evento_dao
 
 import (
-	"github.com/Andreson/go-portifolio/foi-top/persistence"
+	"github.com/Andreson/go-portifolio/foi-top/config"
 	event_entity "github.com/Andreson/go-portifolio/foi-top/persistence/entitys"
 	"github.com/jinzhu/gorm"
 	"log"
 )
 
 func Save(entity event_entity.EventoEntity ){
-	persistence.Execute(func(db *gorm.DB)*gorm.DB  {
+	config.ExecuteQuery(func(db *gorm.DB)*gorm.DB  {
 		return db.Create(&entity)
 	})
 }
 
 func FindById(entity event_entity.EventoEntity )event_entity.EventoEntity{
 	var response event_entity.EventoEntity
-	persistence.Execute(func(db *gorm.DB)*gorm.DB  {
+	config.ExecuteQuery(func(db *gorm.DB)*gorm.DB  {
 		return db.First(&response, entity.ID)
 	})
 

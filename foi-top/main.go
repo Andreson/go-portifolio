@@ -1,12 +1,14 @@
 package main
 
 import (
+	"crypto/sha1"
+	"encoding/base64"
 	aut_controller "github.com/Andreson/go-portifolio/foi-top/controller/autentication"
 	coast_controller "github.com/Andreson/go-portifolio/foi-top/controller/coast"
 	event_controller "github.com/Andreson/go-portifolio/foi-top/controller/event"
 	user_controller "github.com/Andreson/go-portifolio/foi-top/controller/usuario"
+	notific_service "github.com/Andreson/go-portifolio/foi-top/service/pubsub"
 	"log"
-	"net/http"
 	"os"
 )
 
@@ -39,6 +41,21 @@ func  main()  {
 		port="8282"
 	}
 
+	sh :=sha1.New()
+	sh.Write([]byte("login.Password"))
+	pass :=sh.Sum(nil)
+
+	log.Println("############### value of parsing sha1",base64.URLEncoding.EncodeToString(pass))
+
 	log.Printf("Servidor iniciado na porta :%s\n",port)
-	log.Fatal(http.ListenAndServe(":"+port, nil))
+
+	notific_service.SendMesage("send-invite-event", Test{Nome:"Bruce", Idade: 54})
+
+
+	//log.Fatal(http.ListenAndServe(":"+port, nil))
+}
+
+type Test struct {
+	Nome string
+	Idade int
 }
